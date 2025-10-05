@@ -67,6 +67,8 @@ export interface CustomAnchorCardProps {
   datePosted: string;
   applicants: number;
   isSaved: boolean;
+  onClick?: () => void;
+  // setJobData
 }
 
 export interface CustomButtonProps {

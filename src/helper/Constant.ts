@@ -6,7 +6,7 @@ import {
   SearchProps,
 } from "../types/dataTypes";
 
-export const RoutesLinks: RoutesLinksType[] = [
+export const RoutesLinks: Readonly<RoutesLinksType[]> = Object.freeze([
   {
     to: "/",
     label: "Find Jobs",
@@ -18,75 +18,56 @@ export const RoutesLinks: RoutesLinksType[] = [
     icon: IMAGES.diversity,
   },
   {
-    to: "job-tracker",
+    to: "/job-tracker",
     label: "Job Tracker",
     icon: IMAGES.tracker,
   },
   {
-    to: "my-calender",
+    to: "/my-calender",
     label: "My Calender",
     icon: IMAGES.date,
   },
   {
-    to: "documents",
+    to: "/documents",
     label: "Documents",
     icon: IMAGES.document,
   },
   {
-    to: "messages",
+    to: "/messages",
     label: "Messages",
     icon: IMAGES.messages,
   },
   {
-    to: "notifications",
+    to: "/notifications",
     label: "Notifications",
     icon: IMAGES.notification,
   },
-];
+]);
 
-export const locations: MenuItemProps[] = [
-  {
-    id: 1,
-    title: "New York",
-  },
-  {
-    id: 2,
-    title: "London",
-  },
-  {
-    id: 3,
-    title: "Paris",
-  },
-  {
-    id: 4,
-    title: "Tokyo",
-  },
-  {
-    id: 5,
-    title: "Berlin",
-  },
-];
+export const locations: Readonly<MenuItemProps[]> = Object.freeze([
+  { id: 1, title: "New York" },
+  { id: 2, title: "London" },
+  { id: 3, title: "Paris" },
+  { id: 4, title: "Tokyo" },
+  { id: 5, title: "Berlin" },
+]);
 
-export const jobTypes: MenuItemProps[] = [
-  { id: 1, title: "Full-Time" },
-  { id: 2, title: "Part-Time" },
-  { id: 3, title: "Internship" },
-  { id: 4, title: "Freelance" },
+export const jobTypes: Readonly<MenuItemProps[]> = Object.freeze([
+  { id: 4, title: "OnSite" },
   { id: 5, title: "Remote" },
-  { id: 6, title: "Contract" },
-];
+  { id: 6, title: "Hybrid" },
+]);
 
-export const InitialValues: SearchProps = {
+export const InitialValues: Readonly<SearchProps> = Object.freeze({
   jobTypes: "",
   locations: "",
-};
+});
 
-export const cardData: CardSection[] = [
+export const cardData: Readonly<CardSection[]> = Object.freeze([
   {
     id: 1,
     key: "Featured Jobs",
     seeMore: "See Featured Jobs",
-
     data: [
       {
         id: 1,
@@ -271,4 +252,4 @@ export const cardData: CardSection[] = [
       },
     ],
   },
-];
+]);

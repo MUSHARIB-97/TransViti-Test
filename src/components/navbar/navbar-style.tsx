@@ -35,7 +35,7 @@ export const style = {
   // Drawer
   backdrop: "fixed inset-0 bg-black bg-opacity-50 z-20",
   drawer:
-    "fixed top-0 left-0 w-64 h-screen bg-white shadow-lg z-30 flex flex-col rounded-tr-2xl overflow-y-auto",
+    "fixed top-0 left-0 w-64 h-screen bg-white shadow-lg z-[100] flex flex-col rounded-tr-2xl overflow-y-auto",
 
   // Drawer Header (Profile)
   drawerHeader: "relative mb-4 block md:hidden",
