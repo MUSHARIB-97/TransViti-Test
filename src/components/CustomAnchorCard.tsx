@@ -15,7 +15,7 @@ const CustomAnchorCard: React.FC<CustomAnchorCardProps> = memo(
     onClick,
   }) => {
     return (
-      <article className="w-full flex flex-col justify-between border-2 border-border-primary bg-white p-4 md:px-5 md:py-4 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
+      <article className="w-full flex flex-col justify-between border-2 border-border-primary bg-white p-3 md:px-5 md:py-4 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
         {/* Top Badge */}
         <header>
           {isSaved && (
