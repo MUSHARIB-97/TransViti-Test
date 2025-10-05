@@ -1,6 +1,7 @@
 import React from "react";
 import { Styles } from "./UserProfileStyle";
 import IMAGES from "../../assets/images";
+// import OptimizedImage from "../OptimizedImage";
 
 const UserProfile: React.FC = () => {
   const stats = [
@@ -17,9 +18,27 @@ const UserProfile: React.FC = () => {
           <img src={IMAGES.cover} alt="User cover" />
         </figure>
 
+        {/* <figure className={Styles.profileCard}>
+          <OptimizedImage
+            src={IMAGES.cover}
+            alt="User cover"
+            className="w-full h-full object-cover rounded-t-md"
+            loading="eager"
+          />
+        </figure> */}
+
         <figure className={Styles.profileImage}>
           <img src={IMAGES.profile} alt="User profile" />
         </figure>
+
+        {/* <figure className={Styles.profileImage}>
+          <OptimizedImage
+            src={IMAGES.profile}
+            alt="User profile"
+            className="w-full h-full object-cover"
+            loading="eager"
+          />
+        </figure> */}
 
         {/* <header className={Styles.userDetails}>
           <h2 className={Styles.userName}>Albert Flores</h2>
