@@ -50,7 +50,7 @@ export const style = {
 
   // Stats Section
   statsSection:
-    "bg-[#F4F4F4] p-3 mx-2 mb-3 rounded-lg space-y-3 text-sm text-text-secondary [&>p]:flex [&>p]:justify-between [&>p]:border-b last:[&>p]:border-b-0 [&_.count]:text-primary",
+    "bg-[#F4F4F4] block md:hidden p-3 mx-2 mb-3 rounded-lg space-y-3 text-sm text-text-secondary [&>p]:flex [&>p]:justify-between [&>p]:border-b last:[&>p]:border-b-0 [&_.count]:text-primary",
 
   // Drawer Links
   drawerLinks: "flex flex-col gap-4 p-2 bg-[#F4F4F4] rounded-lg mx-2 md:mx-0",
